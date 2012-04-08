@@ -204,12 +204,13 @@ service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     disabled
     oneshot
 
+# This service was removed by KD later as unnecessary.
 # KD 9/12/2011  Add service at boot to populate the APN in the telephony area
-service apn-populate /system/bin/sh /system/etc/init.apn.sh
-    class main
-    user root
-    group radio
-    oneshot
+#service apn-populate /system/bin/sh /system/etc/init.apn.sh
+#    class main
+#    user root
+#    group radio
+#    oneshot
 
 service gpsone_daemon /system/bin/gpsone_daemon
     user root
