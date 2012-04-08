@@ -35,11 +35,11 @@ UTC_DATE := $(shell date +%s)
 DATE     := $(shell date +%Y%m%d)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_ID=IML74K \
+    BUILD_ID=IML77 \
     PRODUCT_NAME=triumph \
     TARGET_DEVICE=triumph \
-    BUILD_FINGERPRINT=motorola/motorola_triumph/triumph:4.0.3/IML74K/223971:user/release-keys \
-    PRIVATE_BUILD_DESC="triumph-user 4.0.3 IML74K 223971 release-keys" \
+    BUILD_FINGERPRINT=motorola/motorola_triumph/triumph:4.0.4/IML77/223971:user/release-keys \
+    PRIVATE_BUILD_DESC="triumph-user 4.0.4 IML77 223971 release-keys" \
     BUILD_NUMBER=${DATE} \
     BUILD_VERSION_TAGS=release-keys \
     TARGET_BUILD_TYPE=user
