@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Mms \
     Music \
-    MusicFX \
     Camera \
     gps.triumph \
     lights.triumph \
