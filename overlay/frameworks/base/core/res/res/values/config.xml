@@ -269,7 +269,7 @@
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Don't name config resources like this.  It should look like config_annoyDianne -->
     <bool name="config_annoy_dianne">true</bool>
@@ -362,7 +362,7 @@
         <item>0</item>
         <item>1</item>
         <item>20</item>
-        <item>21</item>
+        <item>30</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
@@ -483,12 +483,25 @@
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
         <item>0</item>
-        <item>90</item>
-        <item>150</item>
-        <item>300</item>
-        <item>900</item>
-        <item>1200</item>
-	<item>2000</item>
+        <item>15</item>
+        <item>45</item>
+        <item>75</item>
+        <item>105</item>
+        <item>135</item>
+        <item>165</item>
+        <item>195</item>
+        <item>225</item>
+        <item>255</item>
+        <item>285</item>
+        <item>315</item>
+        <item>375</item>
+        <item>435</item>
+        <item>495</item>
+        <item>585</item>
+        <item>675</item>
+        <item>765</item>
+        <item>855</item>
+        <item>945</item>
     </integer-array>
 
 
@@ -500,13 +513,26 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>30</item>
+        <item>20</item>
+        <item>26</item>
+        <item>34</item>
+        <item>42</item>
         <item>50</item>
+        <item>58</item>
+        <item>66</item>
+        <item>74</item>
+        <item>82</item>
+        <item>90</item>
         <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>135</item>
         <item>150</item>
-        <item>200</item>
-        <item>250</item>
-        <item>255</item>
+        <item>165</item>
+        <item>185</item>
+        <item>205</item>
+        <item>225</item>
+        <item>245</item>
         <item>255</item>
     </integer-array>
 
@@ -515,6 +541,27 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>20</item>
+        <item>32</item>
+        <item>40</item>
+        <item>48</item>
+        <item>56</item>
+        <item>64</item>
+        <item>72</item>
+        <item>80</item>
+        <item>88</item>
+        <item>96</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Array of output values for keyboard backlight corresponding to the LUX values
