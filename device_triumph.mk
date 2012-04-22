@@ -170,6 +170,7 @@ PRODUCT_COPY_FILES += \
     device/motorola/triumph/prebuilt/lib/libcamera.so:/obj/lib/libcamera.so \
     device/motorola/triumph/prebuilt/lib/liboemcamera.so:/system/lib/liboemcamera.so \
     device/motorola/triumph/prebuilt/lib/libmmjpeg.so:/system/lib/libmmjpeg.so \
+    device/motorola/triumph/prebuilt/lib/libmmjpeg.so:/obj/lib/libmmjpeg.so \
     device/motorola/triumph/prebuilt/lib/libmmipl.so:/system/lib/libmmipl.so
 
 # EGL/GPU
