@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libmemalloc \
     liboverlay \
+    libstagefrighthw \
     audio_policy.msm7x30 \
     audio.primary.msm7x30 \
     audio.a2dp.default \
@@ -44,13 +45,16 @@ PRODUCT_PACKAGES += \
 
 # QCOM OMX
 PRODUCT_PACKAGES += \
-    libstagefrighthw \
     libmm-omxcore \
-    libdivxdrmdecrypt \
     libOmxCore \
-    libOmxVenc \
+    libdivxdrmdecrypt \
+    liblasic \
     libOmxVdec \
+    libOmxVenc \
+    libOmxVidEnc \
+    mm-vdec-omx-property-mgr \
     mm-vdec-omx-test \
+    mm-venc-omx-test \
     mm-video-driver-test \
     mm-venc-omx-test720p \
     mm-video-encdrv-test
@@ -232,7 +236,7 @@ PRODUCT_DEFAULT_LANGUAGE := en_US
 PRODUCT_DEFAULT_REGION := US
 
 # High-density art, but English locale
-PRODUCT_LOCALES += hdpi
+PRODUCT_LOCALES += en_US hdpi
 PRODUCT_AAPT_CONFIG := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
