@@ -192,11 +192,6 @@ on property:init.svc.bluetoothd=running
 #on property:init.svc.bluetoothd=stopped
 #    stop btwlancoex
 
-service sysinit /system/bin/logwrapper /system/bin/busybox run-parts /system/etc/init.d
-    class main
-    disabled
-    oneshot
-
 service hsag /system/bin/sdptool add --channel=11 HSAG
     class main
     user bluetooth
