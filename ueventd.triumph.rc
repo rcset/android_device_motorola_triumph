@@ -73,7 +73,10 @@
 /dev/oncrpc/3000fffd:00000000	0660	radio	system
 
 #camera
+/dev/cam                0660    root        camera
 /dev/msm_camera/*       0660    system      camera
+/dev/pmem_camera*       0660    system      camera
+/dev/video*             0660    system      camera 
 
 #sensors
 /dev/yas529		0777    root	    system
@@ -83,7 +86,11 @@
 /dev/gps_sync		0777	root        root
 
 #video
-/dev/msm_vidc*          0660    system      graphics
+/dev/msm_vidc_reg         0660  system       audio
+/dev/msm_vidc_dec         0660  system       audio
+/dev/msm_vidc_dec_sec     0660  system       audio
+/dev/msm_vidc_enc         0660  system       audio
+/dev/msm_vidc*            0660  system       graphics
 
 #audio
 /dev/msm_amrnb            0660  system       audio
@@ -102,6 +109,7 @@
 /dev/msm_audio_dev_ctrl 0660    system      audio
 /dev/msm_acdb           0660    system      audio
 /dev/msm_pcm_lp_dec     0660    system      audio
+/dev/pmem               0660    system      graphics
 /dev/pmem_audio         0660    system      audio
 /dev/pmem_adsp*         0660    system      audio
 /dev/adsp/*             0660    system      audio
