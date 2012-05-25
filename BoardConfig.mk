@@ -63,6 +63,8 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 #TARGET_PROVIDES_LIBAUDIO := true
 BOARD_USES_GENERIC_AUDIO := false
 #BOARD_USES_AUDIO_LEGACY := true
+TARGET_USES_QCOM_LPA := true
+COMMON_GLOBAL_CFLAGS += -DWITH_QCOM_LPA
 
 # Graphics
 BOARD_USES_ADRENO_200 := true
@@ -110,6 +112,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/
 
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/motorola/triumph/recovery_kernel
+TARGET_RECOVERY_FSTAB := device/motorola/triumph/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MMCUTILS := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"

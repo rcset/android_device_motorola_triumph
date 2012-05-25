@@ -56,7 +56,18 @@ libcamera.testmode.colorbar=0
 service.config.wifi=0
 wimax.interface=wm0
 
-lpa.decode=false
+dev.pm.dyn_samplingrate=1
+
+#system props for the MM modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-fma2dp=false
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+
+lpa.decode=true
+lpa.use-stagefright=true
+
 ro.hdmi.enable=true
 
 ro.use_data_netmgrd=true
