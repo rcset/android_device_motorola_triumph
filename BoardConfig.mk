@@ -113,6 +113,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/motorola/triumph/recovery_kernel
 TARGET_RECOVERY_FSTAB := device/motorola/triumph/recovery.fstab
+BOARD_HDPI_RECOVERY := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MMCUTILS := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
