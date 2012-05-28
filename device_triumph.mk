@@ -57,7 +57,8 @@ PRODUCT_PACKAGES += \
     mm-venc-omx-test \
     mm-video-driver-test \
     mm-venc-omx-test720p \
-    mm-video-encdrv-test
+    mm-video-encdrv-test \
+    libomxaudio
 
 # Camera
 PRODUCT_PACKAGES += \
