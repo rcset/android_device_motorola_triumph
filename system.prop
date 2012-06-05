@@ -57,6 +57,7 @@ service.config.wifi=0
 wimax.interface=wm0
 
 dev.pm.dyn_samplingrate=1
+windowsmgr.max_events_per_sec=150
 
 #system props for the MM modules
 media.stagefright.enable-player=true
