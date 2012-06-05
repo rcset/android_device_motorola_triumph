@@ -84,6 +84,9 @@ ro.tethering.kb_disconnect=1
 #For USB mount
 persist.sys.usb.config=mass_storage,adb
 
+# USB tether fix
+ro.ril.hsupa.category=6
+
 #HW accel
 debug.fb.rgb565=0
 debug.composition.type=dyn
