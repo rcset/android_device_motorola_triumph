@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
     Music \
     Camera \
     gps.triumph \
+    VmRoms \
+    GooManager \
+    RomKeeper \
     lights.triumph \
     copybit.msm7x30 \
     gralloc.msm7x30 \
@@ -36,7 +39,6 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libmemalloc \
     liboverlay \
-    libstagefrighthw \
     audio_policy.msm7x30 \
     audio.primary.msm7x30 \
     audio.a2dp.default \
@@ -45,16 +47,13 @@ PRODUCT_PACKAGES += \
 
 # QCOM OMX
 PRODUCT_PACKAGES += \
+    libstagefrighthw \
     libmm-omxcore \
-    libOmxCore \
     libdivxdrmdecrypt \
-    liblasic \
-    libOmxVdec \
+    libOmxCore \
     libOmxVenc \
-    libOmxVidEnc \
-    mm-vdec-omx-property-mgr \
+    libOmxVdec \
     mm-vdec-omx-test \
-    mm-venc-omx-test \
     mm-video-driver-test \
     mm-venc-omx-test720p \
     mm-video-encdrv-test \
@@ -144,7 +143,8 @@ PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/etc/firmware/wlan/qcom_wlan_nv.bin:/system/etc/firmware/wlan/qcom_wlan_nv.bin \
     device/motorola/triumph/files/etc/firmware/wlan/cfg.dat:/system/etc/firmware/wlan/cfg.dat \
     device/motorola/triumph/files/etc/firmware/wlan/qcom_cfg.ini:/system/etc/firmware/wlan/qcom_cfg.ini \
-    device/motorola/triumph/files/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/motorola/triumph/files/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/motorola/triumph/prebuilt/bin/wpa_supplicant:/system/bin/wpa_supplicant
 
 # Hostapd
 PRODUCT_COPY_FILES += \
@@ -199,6 +199,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/usr/idc/bi041p.idc:/system/usr/idc/bi041p.idc
 
+# My apps
+PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/app/VmRoms.apk:/system/app/VmRoms.apk \
+    device/motorola/triumph/prebuilt/app/RomKeeper.apk:/system/app/RomKeeper.apk 
+
 # Xml config
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/etc/media_profiles.xml:system/etc/media_profiles.xml
@@ -237,7 +242,7 @@ PRODUCT_DEFAULT_LANGUAGE := en_US
 PRODUCT_DEFAULT_REGION := US
 
 # High-density art, but English locale
-PRODUCT_LOCALES += en_US hdpi
+PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
@@ -257,4 +262,4 @@ PRODUCT_VERSION_MAJOR := 9
 PRODUCT_VERSION_MINOR := 0.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
-            ro.cm.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).Triumph-Alpha-0.6.15.0
+            ro.cm.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).Triumph-Alpha-0.6.12.0

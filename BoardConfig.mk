@@ -113,12 +113,24 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun0/
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/motorola/triumph/recovery_kernel
 TARGET_RECOVERY_FSTAB := device/motorola/triumph/recovery.fstab
-BOARD_HDPI_RECOVERY := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USES_MMCUTILS := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/motorola/triumph/recovery/default_recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/motorola/triumph/recovery/minui/graphics.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/motorola/triumph/recovery/recovery_ui.c
+#BOARD_CUSTOM_GRAPHICS := ../../../device/motorola/triumph/recovery/minui/graphics.c
+
+#TWRP
+DEVICE_RESOLUTION := 480x800
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INTERNAL_STORAGE_PATH := "/data"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/sdc"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdc"
+TW_CUSTOM_POWER_BUTTON := 116
+TW_NO_USB_STORAGE := true
+TW_NO_REBOOT_BOOTLOADER := true
 
 # Filesystem
 BOARD_SYSTEM_DEVICE := /dev/block/mmcblk0p7
