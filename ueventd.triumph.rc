@@ -86,10 +86,6 @@
 /dev/gps_sync		0777	root        root
 
 #video
-/dev/msm_vidc_reg         0660  system       audio
-/dev/msm_vidc_dec         0660  system       audio
-/dev/msm_vidc_dec_sec     0660  system       audio
-/dev/msm_vidc_enc         0660  system       audio
 /dev/msm_vidc*            0660  system       graphics
 
 #audio
@@ -123,6 +119,7 @@
 /dev/msm_rotator        0660    system      graphics
 /dev/kgsl-2d0           0666    root        root
 /dev/kgsl-3d0           0666    root        root
+/dev/graphics/fb*       0666    system      graphics
 
 #genlock
 /dev/genlock            0666    root        root
