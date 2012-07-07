@@ -14,7 +14,7 @@ else
 endif
 
 # Build hdmid
-include frameworks/base/cmds/hdmid/Android.mk
+# include frameworks/base/cmds/hdmid/Android.mk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm7x30
+
+# HDMI
+PRODUCT_PACKAGES += \
+    hdmid
 
 # Init files
 PRODUCT_COPY_FILES += \
