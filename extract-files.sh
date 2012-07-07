@@ -197,7 +197,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/port-bridge:/system/bin/port-bridge \\
     vendor/__VENDOR__/__DEVICE__/proprietary/wpdiagd:/system/bin/wpdiagd \\
     vendor/__VENDOR__/__DEVICE__/proprietary/btwlancoex:/system/bin/btwlancoex \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/hdmid:/system/bin/hdmid \\
     vendor/__VENDOR__/__DEVICE__/proprietary/cnd:/system/bin/cnd
 
 # MM
