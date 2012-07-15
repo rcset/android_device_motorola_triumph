@@ -52,12 +52,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidEnc \
-    mm-vdec-omx-property-mgr \
-    mm-vdec-omx-test \
-    mm-venc-omx-test \
-    mm-video-driver-test \
     mm-venc-omx-test720p \
-    mm-video-encdrv-test \
     libomxaudio
 
 # Camera
