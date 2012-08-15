@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     Music \
     Camera \
     gps.triumph \
-    lights.triumph \
     copybit.msm7x30 \
     gralloc.msm7x30 \
     hwcomposer.msm7x30 \
@@ -70,12 +69,12 @@ PRODUCT_COPY_FILES += \
 
 # Vold
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/vold.fstab:system/etc/vold.fstab
+    device/motorola/triumph/vold.fstab:/system/etc/vold.fstab
 
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:/system/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:/system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:/system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.autofocus.xml:/system/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:/system/etc/permissions/android.hardware.camera.front.xml \
@@ -143,7 +142,8 @@ PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/etc/firmware/wlan/qcom_wlan_nv.bin:/system/etc/firmware/wlan/qcom_wlan_nv.bin \
     device/motorola/triumph/files/etc/firmware/wlan/cfg.dat:/system/etc/firmware/wlan/cfg.dat \
     device/motorola/triumph/files/etc/firmware/wlan/qcom_cfg.ini:/system/etc/firmware/wlan/qcom_cfg.ini \
-    device/motorola/triumph/files/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/motorola/triumph/files/etc/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/motorola/triumph/prebuilt/bin/wpa_supplicant:/system/bin/wpa_supplicant
 
 # Hostapd
 PRODUCT_COPY_FILES += \
@@ -166,7 +166,7 @@ PRODUCT_COPY_FILES += \
 
 # APN
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/files/etc/apns-conf.xml:system/etc/apns-conf.xml
+    device/motorola/triumph/files/etc/apns-conf.xml:/system/etc/apns-conf.xml
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -200,11 +200,15 @@ PRODUCT_COPY_FILES += \
 
 # Xml config
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/files/etc/media_profiles.xml:system/etc/media_profiles.xml
+    device/motorola/triumph/files/etc/media_profiles.xml:/system/etc/media_profiles.xml
 
 # Modules
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
+
+# HWComposer (Temp)
+PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so
 
 # Init.d task management
 PRODUCT_COPY_FILES += \
