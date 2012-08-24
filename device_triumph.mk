@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     copybit.msm7x30 \
     gralloc.msm7x30 \
     hwcomposer.msm7x30 \
+    lights.triumph \
     overlay.msm7x30 \
     libgenlock \
     libmemalloc \
@@ -206,9 +207,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
 
-# HWComposer (Temp)
+# Temp rigs
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so
+    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so \
+    device/motorola/triumph/prebuilt/lib/hw/lights.triumph.so:/system/lib/hw/lights.triumph.so 
 
 # Init.d task management
 PRODUCT_COPY_FILES += \
