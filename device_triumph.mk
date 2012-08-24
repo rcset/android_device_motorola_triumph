@@ -209,7 +209,6 @@ PRODUCT_COPY_FILES += \
 
 # Temp rigs
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so \
     device/motorola/triumph/prebuilt/lib/hw/lights.triumph.so:/system/lib/hw/lights.triumph.so 
 
 # Init.d task management
