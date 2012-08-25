@@ -208,8 +208,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
 
 # Temp rigs
-PRODUCT_COPY_FILES += \
-    device/motorola/triumph/prebuilt/lib/hw/lights.triumph.so:/system/lib/hw/lights.triumph.so 
 
 # Init.d task management
 PRODUCT_COPY_FILES += \
