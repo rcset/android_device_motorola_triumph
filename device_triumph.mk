@@ -210,7 +210,8 @@ PRODUCT_COPY_FILES += \
 
 # Temp Rigs
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so
+    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so \
+    device/motorola/triumph/prebuilt/lib/hw/lights.triumph.so:/system/lib/hw/lights.triumph.so 
 
 # Init.d task management
 PRODUCT_COPY_FILES += \
@@ -257,4 +258,5 @@ PRODUCT_DEVICE := triumph
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := WX435
 PRODUCT_MANUFACTURER := Motorola
+
 
