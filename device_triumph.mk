@@ -201,14 +201,16 @@ PRODUCT_COPY_FILES += \
 
 # Xml config
 PRODUCT_COPY_FILES += \
-    device/motorola/triumph/files/etc/media_profiles.xml:/system/etc/media_profiles.xml
+    device/motorola/triumph/files/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/motorola/triumph/files/etc/audio_policy.conf:system/etc/audio_policy.conf
 
 # Modules
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
 
-# Temp rigs
+# Temp Rigs
 PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so \
     device/motorola/triumph/prebuilt/lib/hw/lights.triumph.so:/system/lib/hw/lights.triumph.so 
 
 # Init.d task management
@@ -256,4 +258,5 @@ PRODUCT_DEVICE := triumph
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := WX435
 PRODUCT_MANUFACTURER := Motorola
+
 
