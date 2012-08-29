@@ -206,6 +206,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/modules/cifs.ko:/system/lib/modules/cifs.ko
 
+# Temp Rigs
+PRODUCT_COPY_FILES += \
+    device/motorola/triumph/prebuilt/lib/hw/hwcomposer.msm7x30.so:/system/lib/hw/hwcomposer.msm7x30.so
+
 # Init.d task management
 PRODUCT_COPY_FILES += \
     device/motorola/triumph/files/etc/init.d/99memory:/system/etc/init.d/99memory
